@@ -16,6 +16,7 @@ How I Verified It:
 - Opened the page in a browser.
 - Checked desktop, tablet, and mobile layouts.
 - Confirmed no Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I Learned:
 - Building one feature at a time makes verification simpler and keeps the project organized.
@@ -45,6 +46,7 @@ How I Verified It:
 - Tested required field validation.
 - Tested the layout on desktop, tablet, and mobile.
 - Confirmed there are no project Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I Learned:
 - Built-in HTML validation with the required attribute can provide useful validation without JavaScript.

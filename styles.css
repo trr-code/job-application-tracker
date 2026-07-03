@@ -132,6 +132,68 @@ body {
   background-color: #2f4bc4;
 }
 
+.application-list {
+  list-style: none;
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.application-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.application-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.application-job-title {
+  color: var(--color-text-muted);
+}
+
+.application-date {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.application-label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.application-status {
+  align-self: start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.status-applied {
+  background-color: #e7ecfd;
+  color: #2f4bc4;
+}
+
+.status-interview {
+  background-color: #fff4e0;
+  color: #b26a00;
+}
+
+.status-offer {
+  background-color: #e3f7e8;
+  color: #1e7d34;
+}
+
+.status-rejected {
+  background-color: #fde3e3;
+  color: #c0392b;
+}
+
 @media (min-width: 768px) {
   .page-main {
     padding: var(--spacing-xl) var(--spacing-lg);
@@ -148,5 +210,9 @@ body {
 
   .btn-submit {
     grid-column: 1 / -1;
+  }
+
+  .application-list {
+    grid-template-columns: 1fr 1fr;
   }
 }
