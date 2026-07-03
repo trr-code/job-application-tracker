@@ -38,7 +38,7 @@ What I Built:
 - Added Company, Job Title, Date Applied, and Status fields.
 - Added an Add Application button.
 - Added responsive styling for the form.
-- Added built-in HTML validation with the required attribute.
+- Added built-in HTML validation with the `required` attribute.
 
 How I Verified It:
 - Confirmed all fields and the button display correctly.
@@ -86,14 +86,34 @@ Commit Message:
 ## Feature 4 – Add Application Functionality
 
 Goal:
+- Allow the user to add a job application through the form.
 
 What I Built:
+- Connected the form to JavaScript.
+- Prevented the page from reloading on form submission.
+- Created new application cards from user input.
+- Added new application cards to the Your Applications section.
+- Cleared the form after each submission.
+- Replaced placeholder cards with an empty-state message.
+- Used a dedicated `.empty-state` class for the empty-state message.
 
 How I Verified It:
+- Confirmed the empty-state message displays when there are no applications.
+- Added multiple test applications using the form.
+- Confirmed each new card displays the correct information.
+- Confirmed the empty-state message disappears after the first application is added.
+- Confirmed the form clears after submission.
+- Confirmed the `required` field validation still works.
+- Confirmed there were no project Console errors.
 
 What I Learned:
+- Separating each feature into small steps makes testing and debugging easier.
+- Questioning AI's implementation decisions can lead to cleaner, more maintainable code.
+- Using dedicated classes makes the code easier to understand and maintain.
+- Verifying each feature before moving on helps catch small issues early.
 
 Commit Message:
+- Add application functionality
 
 ## Feature 5 – Delete Application
 

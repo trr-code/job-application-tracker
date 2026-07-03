@@ -161,6 +161,11 @@ body {
   color: var(--color-text-muted);
 }
 
+.empty-state {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
 .application-label {
   font-weight: 500;
   color: var(--color-text);
