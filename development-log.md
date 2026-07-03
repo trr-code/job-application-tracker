@@ -59,14 +59,29 @@ Commit Message:
 ## Feature 3 – Display Applications
 
 Goal:
+- Display job applications in the Your Applications section.
 
 What I Built:
+- Added placeholder application cards.
+- Displayed Company, Job Title, Date Applied, and Status on each card.
+- Added color-coded status badges.
+- Added responsive card layout for mobile and desktop.
 
 How I Verified It:
+- Confirmed four application cards display.
+- Verified each card shows the correct information.
+- Confirmed each status uses a different color.
+- Tested the layout on desktop, tablet, and mobile.
+- Confirmed there were no project Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I Learned:
+- Building the display before adding JavaScript makes it easier to verify the layout independently.
+- Placeholder data is useful for testing the interface before connecting real data.
+- Separating each feature into small steps makes debugging and verification simpler.
 
 Commit Message:
+- Display application cards
 
 ## Feature 4 – Add Application Functionality
 
