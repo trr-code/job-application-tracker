@@ -173,6 +173,7 @@ How I Verified It:
 - Added multiple applications, deleted one, and confirmed the remaining one persisted.
 - Deleted the last application and confirmed the empty-state message returned.
 - Confirmed there were no project Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I'm Learning:
 - Inspecting Local Storage directly is an effective way to verify application data.
@@ -186,11 +187,31 @@ Commit Message:
 ## Feature 7 – Final Testing & Responsive Polish
 
 Goal:
+- Review and polish the application before final submission.
 
 What I Built:
+- Lightly refactored `script.js` for better organization.
+- Added section comments for Storage, UI, and Events.
+- Added a `getApplicationFromForm()` helper function.
+- Updated add and delete behavior to re-render from `localStorage`.
+- Removed duplicated UI update paths.
+- Kept the project simple without adding extra files, classes, or features.
 
 How I Verified It:
+- Confirmed the empty-state message displays correctly.
+- Added applications and confirmed cards display correctly.
+- Refreshed the page and confirmed applications persist.
+- Deleted applications and confirmed they stay deleted after refresh.
+- Confirmed the empty-state message returns after deleting the last application.
+- Verified `jobApplications` updates correctly in Local Storage.
+- Confirmed there were no project Console errors.
+- Checked desktop, tablet, and mobile layouts.
 
-What I Learned:
+What I'm Learning:
+- Light refactoring can improve maintainability without over-engineering.
+- Rendering from one place makes the application behavior easier to reason about.
+- Final testing should confirm the full workflow, not just one feature.
+- A simple project can still show professional development habits.
 
 Commit Message:
+- Polish application workflow

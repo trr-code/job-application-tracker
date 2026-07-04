@@ -4,6 +4,7 @@ const form = document.querySelector('.application-form');
 const applicationList = document.querySelector('.application-list');
 const listSection = document.querySelector('.list-section');
 
+// Storage
 function generateId() {
   return crypto.randomUUID();
 }
@@ -17,6 +18,7 @@ function saveApplications(applications) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(applications));
 }
 
+// UI
 function getStatusClass(status) {
   return 'status-' + status.toLowerCase();
 }
@@ -104,36 +106,28 @@ function deleteApplication(id) {
   });
 
   saveApplications(applications);
-
-  const card = applicationList.querySelector('[data-id="' + id + '"]');
-
-  if (card) {
-    card.remove();
-  }
-
-  if (applications.length === 0) {
-    showEmptyState();
-  }
+  renderApplications(getApplications());
 }
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  const application = {
+// Events
+function getApplicationFromForm() {
+  return {
     id: generateId(),
     company: document.getElementById('company').value,
     jobTitle: document.getElementById('job-title').value,
     dateApplied: document.getElementById('date-applied').value,
     status: document.getElementById('status').value
   };
+}
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
 
   const applications = getApplications();
-  applications.push(application);
+  applications.push(getApplicationFromForm());
   saveApplications(applications);
 
-  hideEmptyState();
-  applicationList.appendChild(createApplicationCard(application));
-
+  renderApplications(getApplications());
   form.reset();
 });
 
