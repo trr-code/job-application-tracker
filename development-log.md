@@ -139,6 +139,7 @@ How I Verified It:
 - Closed and reopened the page and confirmed applications were still saved.
 - Verified the `jobApplications` key was created in Local Storage.
 - Confirmed there were no project Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I'm Learning:
 
@@ -153,14 +154,34 @@ Commit Message:
 ## Feature 6 – Delete Application
 
 Goal:
+- Allow the user to delete saved job applications.
 
 What I Built:
+- Added a Delete button to each application card.
+- Added a unique `id` to each new application.
+- Stored each application `id` in `localStorage`.
+- Added delete functionality that removes the selected application from the page.
+- Updated `localStorage` so deleted applications stay deleted after refresh.
+- Restored the empty-state message when the last application is deleted.
+- Added styling for the Delete button.
 
 How I Verified It:
+- Added an application and confirmed it displayed with a Delete button.
+- Confirmed new applications include an `id` in Local Storage.
+- Deleted an application and confirmed it disappeared from the page.
+- Refreshed the page and confirmed the deleted application did not return.
+- Added multiple applications, deleted one, and confirmed the remaining one persisted.
+- Deleted the last application and confirmed the empty-state message returned.
+- Confirmed there were no project Console errors.
 
-What I Learned:
+What I'm Learning:
+- Inspecting Local Storage directly is an effective way to verify application data.
+- Verifying both the UI and Local Storage makes debugging easier.
+- Building one feature at a time keeps problems isolated and easier to diagnose.
+- Testing every workflow before committing helps catch issues early.
 
 Commit Message:
+- Add delete functionality
 
 ## Feature 7 – Final Testing & Responsive Polish
 

@@ -199,6 +199,24 @@ body {
   color: #c0392b;
 }
 
+.btn-delete {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-surface);
+  color: #c0392b;
+  cursor: pointer;
+  align-self: start;
+  margin-top: var(--spacing-xs);
+}
+
+.btn-delete:hover {
+  background-color: #fde3e3;
+}
+
 @media (min-width: 768px) {
   .page-main {
     padding: var(--spacing-xl) var(--spacing-lg);
