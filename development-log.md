@@ -206,6 +206,7 @@ How I Verified It:
 - Verified `jobApplications` updates correctly in Local Storage.
 - Confirmed there were no project Console errors.
 - Checked desktop, tablet, and mobile layouts.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I'm Learning:
 - Light refactoring can improve maintainability without over-engineering.
