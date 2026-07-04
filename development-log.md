@@ -105,6 +105,7 @@ How I Verified It:
 - Confirmed the form clears after submission.
 - Confirmed the `required` field validation still works.
 - Confirmed there were no project Console errors.
+- Tested the feature on GitHub Pages after pushing the changes.
 
 What I Learned:
 - Separating each feature into small steps makes testing and debugging easier.
@@ -115,7 +116,41 @@ What I Learned:
 Commit Message:
 - Add application functionality
 
-## Feature 5 – Delete Application
+## Feature 5 – Persist Applications with localStorage
+
+Goal:
+
+- Keep applications after the page is refreshed.
+
+What I Built:
+
+- Added helper functions to save and load applications from `localStorage`.
+- Stored applications using the `jobApplications` key.
+- Loaded saved applications when the page first opens.
+- Rendered saved application cards automatically on page load.
+- Kept the empty-state message visible when there are no saved applications.
+- Hid the empty-state message when saved applications exist or a new application is added.
+
+How I Verified It:
+
+- Confirmed the empty-state message displays when no applications are saved.
+- Added multiple applications using the form.
+- Refreshed the page and confirmed all applications persisted.
+- Closed and reopened the page and confirmed applications were still saved.
+- Verified the `jobApplications` key was created in Local Storage.
+- Confirmed there were no project Console errors.
+
+What I'm Learning:
+
+- Separating storage logic into dedicated helper functions keeps the code easier to understand and maintain.
+- Verifying data in browser DevTools helps confirm features are working correctly.
+- Building one feature at a time makes it easier to isolate and verify new functionality.
+
+Commit Message:
+
+- Persist applications with localStorage
+
+## Feature 6 – Delete Application
 
 Goal:
 
@@ -127,7 +162,7 @@ What I Learned:
 
 Commit Message:
 
-## Feature 6 – Final Testing & Responsive Polish
+## Feature 7 – Final Testing & Responsive Polish
 
 Goal:
 
