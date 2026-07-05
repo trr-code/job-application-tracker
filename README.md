@@ -8,9 +8,17 @@ Job Application Tracker is a simple web application that helps users record and 
 
 [View the Live Demo](https://trr-code.github.io/job-application-tracker/)
 
-## Purpose of the Project
+## Problem
 
-This project was built for the **Next Chapter Technical Pre-Course** admissions project. It demonstrates foundational web development skills using HTML, CSS, and JavaScript, including semantic markup, responsive design, DOM manipulation, browser storage, and incremental feature development.
+Keeping track of multiple job applications can become difficult, especially when applying to many companies over time. Without a simple way to organize applications, it is easy to lose track of where you applied, when you applied, and each application's current status.
+
+## Value
+
+Job Application Tracker provides a simple way to organize and manage job applications in one place. It allows users to record important application details, track progress, and keep their information available after refreshing the page using `localStorage`.
+
+## Project Plan
+
+The goal was to build a responsive job application tracker using HTML, CSS, and JavaScript by following an incremental development process. Before implementing each feature, I used ChatGPT to brainstorm ideas, question implementation decisions, bounce ideas back and forth, and better understand the software engineering concepts behind each step. This helped me clearly visualize each feature before creating focused implementation prompts for Cursor.
 
 The application solves a practical problem: keeping job search information organized without requiring accounts, databases, or external dependencies.
 
@@ -27,6 +35,15 @@ The application solves a practical problem: keeping job search information organ
 - Persist applications with `localStorage`
 - Delete individual applications
 - Restore empty-state message when the last application is deleted
+
+## Future Features
+
+- Edit existing applications
+- Add notes for each application
+- Filter applications by status
+- Add a confirmation dialog before deleting an application
+- Identify and track felony-friendly employers
+- Add user accounts with database storage so applications can sync across devices
 
 ## Technologies Used
 
