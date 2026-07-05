@@ -18,7 +18,7 @@ How I Verified It:
 - Confirmed no Console errors.
 - Tested the feature on GitHub Pages after pushing the changes.
 
-What I Learned:
+What I'm Learning:
 - Building one feature at a time makes verification simpler and keeps the project organized.
 - Breaking the project into smaller steps helps me better understand each part before moving on.
 - Testing each completed feature gives me confidence that changes aren't introducing new problems.
@@ -48,7 +48,7 @@ How I Verified It:
 - Confirmed there are no project Console errors.
 - Tested the feature on GitHub Pages after pushing the changes.
 
-What I Learned:
+What I'm Learning:
 - Built-in HTML validation with the required attribute can provide useful validation without JavaScript.
 - Asking AI why it made a design decision helps me better understand the implementation before moving on.
 - Verifying each completed feature before continuing makes the project easier to manage.
@@ -75,7 +75,7 @@ How I Verified It:
 - Confirmed there were no project Console errors.
 - Tested the feature on GitHub Pages after pushing the changes.
 
-What I Learned:
+What I'm Learning:
 - Building the display before adding JavaScript makes it easier to verify the layout independently.
 - Placeholder data is useful for testing the interface before connecting real data.
 - Separating each feature into small steps makes debugging and verification simpler.
@@ -107,7 +107,7 @@ How I Verified It:
 - Confirmed there were no project Console errors.
 - Tested the feature on GitHub Pages after pushing the changes.
 
-What I Learned:
+What I'm Learning:
 - Separating each feature into small steps makes testing and debugging easier.
 - Questioning AI's implementation decisions can lead to cleaner, more maintainable code.
 - Using dedicated classes makes the code easier to understand and maintain.
